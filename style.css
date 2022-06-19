@@ -41,6 +41,7 @@ main {
   border-radius: 7px;
   margin-bottom: 25px;
   min-height: 40px;
+  box-shadow: 0px 6px hsl(0, 80%, 66%);
 }
 
 .right-bottom {
@@ -50,6 +51,7 @@ main {
   padding: 40px;
   border-radius: 7px;
   min-height: 320px;
+  box-shadow: 0px 6px hsl(0, 80%, 66%);
 }
 
 h1 {
@@ -104,6 +106,7 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  box-shadow: 0px 4px hsl(154, 61%, 42%);
 }
 
 input[type="submit"]:hover {
