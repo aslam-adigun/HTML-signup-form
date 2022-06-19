@@ -10,26 +10,30 @@ body {
   background-attachment: fixed;
   background-size: cover;
   display: grid;
-  height: 100vh;
-  margin: 7em;
+  /* height: 100vh; */
+  margin-left: 7em;
+  margin-right: 7em;
+  margin-top: 5em;
   grid-gap: 0px;
 }
 
 main {
   display: grid;
   grid-template-areas:
-    "a b"
-    "a c";
+    "a b";
   /* grid-template-columns: 500px; */
   /* grid-template-rows: 50px; */
 }
 
 .left {
   width: 450px;
-  /* background-color: hsl(31, 77%, 52%); */
   padding: 2.5em;
   grid-area: a;
-  max-height: 300px;
+  min-height: 300px;
+}
+
+.right {
+  grid-area: b;
 }
 
 .right-top {
@@ -39,8 +43,8 @@ main {
   justify-content: center;
   padding-top: 15px;
   border-radius: 7px;
-  grid-area: b;
-  max-height: 2.2em;
+  margin-bottom: 25px;
+  min-height: 40px;
 }
 
 .right-bottom {
@@ -49,8 +53,8 @@ main {
   background-color: hsl(0, 0%, 100%);
   padding: 40px;
   border-radius: 7px;
-  grid-area: c;
-  max-height: 320px;
+  /* grid-area: c; */
+  min-height: 320px;
 }
 
 h1 {
