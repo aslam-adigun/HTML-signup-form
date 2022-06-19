@@ -32,7 +32,8 @@ main {
 }
 
 @media (min-width: 375px) {
-.master { grid-template-columns: repeat(2, 1fr); }
+.master { grid-template-columns: repeat(2, 1fr); background: url("Registration-form/images/bg-intro-mobile.png"),
+  hsl(0, 100%, 74%); }
 }
 
 .left {
