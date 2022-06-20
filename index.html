@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="Registration-form/images/favicon-32x32.png" />
   </head>
   <body>
     <main>
@@ -29,32 +30,44 @@
           <p><strong>Try it free 7 days </strong>then $20/mo. thereafter</p>
         </div>
         <div class="right-bottom">
-          <form>
+          <form class="regform">
             <input
               type="text"
               id="fname"
               name="firstname"
               placeholder="First Name"
+              required
+              oninvalid="this.setCustomValidity('First Name cannot be empty')"
+              oninput="this.setCustomValidity('')"
             />
             <input
               type="text"
               id="lname"
               name="lastname"
               placeholder="Last Name"
+              required
+              oninvalid="this.setCustomValidity('Last Name cannot be empty')"
+              oninput="this.setCustomValidity('')"
             />
             <input
-              type="text"
+              type="email"
               id="email"
               name="email"
               placeholder="Email Address"
+              required
+              oninvalid="this.setCustomValidity('Looks like this is not an email')"
+              oninput="this.setCustomValidity('')"
             />
-            <input
-              type="text"
+           <input
+              type="password"
               id="pword"
               name="password"
               placeholder="Password"
+              required
+              oninvalid="this.setCustomValidity('Password cannot be empty')"
+              oninput="this.setCustomValidity('')"
             />
-            <input type="submit" value="CLAIM YOUR FREE TRIAL" />
+            <input class="submit" type="submit" value="CLAIM YOUR FREE TRIAL" />
           </form>
           <p class="p-terms">
             By clicking the button, you are agreeing to our
@@ -64,5 +77,6 @@
       </div>
     </div>
     </main>
+    <script src="/index.js"></script>
   </body>
 </html>

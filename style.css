@@ -113,6 +113,36 @@ select {
   box-sizing: border-box;
 }
 
+input[type="email"],
+select {
+  width: 100%;
+  max-height: 150px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="password"],
+select {
+  width: 100%;
+  max-height: 150px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 input[type="submit"] {
   width: 100%;
   max-height: 150px;
@@ -143,4 +173,29 @@ input[type="submit"]:hover {
 .p-terms-s {
   font-size: 10px;
   color: hsl(0, 100%, 74%);
+}
+
+.error-image {
+  bottom: -42px;
+  content: url(/images/icon-error.svg);
+  display: inline;
+  position: relative;
+  right: -172px;
+  visibility: hidden;
+}
+
+.error-message {
+  color: var(--color-bg);
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: 500;
+  position: relative;
+  right: 12px;
+  text-align: right;
+  top: 8px;
+  visibility: hidden;
+}
+
+.error {
+  visibility: visible;
 }
